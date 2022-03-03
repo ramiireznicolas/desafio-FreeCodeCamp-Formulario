@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200i,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #7545A2;
+
+    h1 {
+        color: white;
+        text-align: center;
+    }
+
+    h2 {
+        font-size: 1.125rem;
+        font-family: 'Open Sans', sans-serif;
+        color: white;
+        text-align: center;
+    }
+
+    form {
+        background: rgba(27, 27, 50, 0.8);
+        margin: 0 20%;
+        padding: 3%;
+        border-radius: 5px;
+    }
+
+    p {
+        font-size: 1.3em;
+        color: white;
+        margin: 3% 3%;
+    }
+
+
+    .date {
+        display: flex;
+        flex-direction: column;
+        margin: 1% 3%;
+        font-size: 1.3em;
+        color: white;
+    }
+
+    .select {
+        margin: 0 3%;
+        width: 23%;
+        height: 30px;
+        font-size: 1.4em;
+        font-family: 'Bebas Neue', cursive;
+        border-radius: 5px;
+    }
+
+
+    input {
+        height: 27px;
+        border-radius: 5px;
+    }
+
+    .form-date {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .radio-checkbox {
+        display: flex;
+        margin: 0 3%;
+        color: white;
+        font-size: 1.3em;
+    }
+
+    .any {
+        text-align: center;
+    }
+
+    .textarea {
+        margin: 0 24%;
+        min-height: 80px;
+        width: 50%;
+        padding: 0.625rem;
+        resize: vertical;
+    }
+
+    .button {
+        text-align: center;
+    }
+
+    .input-button {
+        color: black;
+        font-family: 'Bebas Neue', cursive;
+        background: green;
+        border: 2px solid black;
+        border-radius: 5px;
+        cursor: pointer;
+        width: 60%;
+        height: 35px;
+        font-size: 1.6em;
+        margin: 2%;
+    }
+
+    .input-button:hover {
+        background-color: green;
+        color: white;
+    }
+}
+
+@media (max-width: 600px){
+    body form{
+        margin: 0 auto;
+    }
+}
