@@ -5,6 +5,7 @@
 body {
     font-family: 'Poppins', sans-serif;
     background-color: #7545A2;
+    justify-content: center;
 
     h1 {
         color: white;
@@ -20,55 +21,46 @@ body {
 
     form {
         background: rgba(27, 27, 50, 0.8);
-        margin: 0 20%;
-        padding: 3%;
+        padding: 5px;
         border-radius: 5px;
+        max-width: 750px;
+        margin: auto;
+        .form-date {
+            display: flex;
+            flex-direction: column;
+            .date {
+                display: flex;
+                flex-direction: column;
+                margin: 5px 10px;
+                font-size: 1.3em;
+                color: white;
+            }
+        }
+        p {
+            font-size: 1em;
+            color: white;
+            margin: 5px 5px;
+        }
+        .select {
+            margin: auto 10px;
+            width: 150px;
+            height: 30px;
+            font-size: 1.4em;
+            font-family: 'Bebas Neue', cursive;
+            border-radius: 5px;
+        }
     }
-
-    p {
-        font-size: 1.3em;
-        color: white;
-        margin: 3% 3%;
-    }
-
-
-    .date {
-        display: flex;
-        flex-direction: column;
-        margin: 1% 3%;
-        font-size: 1.3em;
-        color: white;
-    }
-
-    .select {
-        margin: 0 3%;
-        width: 23%;
-        height: 30px;
-        font-size: 1.4em;
-        font-family: 'Bebas Neue', cursive;
-        border-radius: 5px;
-    }
-
 
     input {
         height: 27px;
         border-radius: 5px;
     }
 
-    .form-date {
-        display: flex;
-        flex-direction: column;
-    }
-
     .radio-checkbox {
         display: flex;
-        margin: 0 3%;
+        margin: auto 5px;
         color: white;
-        font-size: 1.3em;
-    }
-
-    .any {
-        text-align: center;
+        font-size: 1em;
     }
 
     .textarea {
@@ -99,11 +91,5 @@ body {
     .input-button:hover {
         background-color: green;
         color: white;
-    }
-}
-
-@media (max-width: 600px){
-    body form{
-        margin: 0 auto;
     }
 }
